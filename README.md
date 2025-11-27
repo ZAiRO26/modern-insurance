@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Insurance / Catalyst Mergers
+
+This is a comprehensive insurance website built with Next.js 14+, Tailwind CSS, and TypeScript. It features a responsive design, SEO optimization, and a seamless user experience.
+
+## Features
+
+*   **Responsive Design:** Optimized for all devices (Mobile, Tablet, Desktop).
+*   **Modern Tech Stack:** Next.js 14 App Router, Tailwind CSS, Framer Motion.
+*   **SEO Optimized:** Semantic HTML, JSON-LD Schema, and meta tags.
+*   **Contact Form:** Integrated with Nodemailer for email delivery.
+*   **Interactive Maps:** Google Maps integration.
+*   **Performance:** Fast loading with optimized assets.
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/ZAiRO26/modern-insurance.git
+    cd modern-insurance
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the browser:**
+    Navigate to `http://localhost:3000` to see the application.
+
+## Environment Variables
+
+Create a `.env` file in the root directory and add the following variables for email functionality:
+
+```env
+EMAIL_HOST=smtp.example.com
+EMAIL_PORT=587
+EMAIL_USER=your-email@example.com
+EMAIL_PASS=your-password
+EMAIL_TO=recipient@example.com
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is configured for easy deployment on **Netlify** or **Vercel**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Netlify
 
-## Learn More
+The project includes a `netlify.toml` file for automatic configuration.
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Simply import the repository into Vercel, and it will automatically detect the Next.js framework.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Repository Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/              # Next.js App Router pages and API routes
+├── components/       # Reusable React components
+│   ├── contact/      # Contact form and map components
+│   ├── layout/       # Navbar, Footer, and layout wrappers
+│   └── ui/           # Generic UI components (buttons, inputs, etc.)
+├── lib/              # Utility functions
+└── ...
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
