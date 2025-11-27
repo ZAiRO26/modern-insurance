@@ -25,6 +25,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Morris & Garritano | Insurance & Risk Management",
   description: "Trusted advisory since 1885. Property & Casualty, Employee Benefits, and Personal Insurance tailored to your needs.",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
