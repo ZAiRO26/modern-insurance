@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 const services = [
@@ -43,9 +44,13 @@ export function Hero() {
           >
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
-              <div 
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${service.image})` }}
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                className="object-cover"
+                priority={index === 0}
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="absolute inset-0 bg-[var(--primary)]/80 group-hover:bg-[var(--primary)]/70 transition-colors duration-500" />
             </div>
