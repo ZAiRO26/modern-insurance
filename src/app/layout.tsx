@@ -3,6 +3,8 @@ import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { Schema } from "@/components/ui/Schema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${playfair.variable} antialiased bg-white text-slate-900`}
       >
+        <Schema />
         <Navbar />
+        <Breadcrumbs />
         {children}
         <Footer />
       </body>
