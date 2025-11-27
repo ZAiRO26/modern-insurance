@@ -7,7 +7,7 @@ export function Schema() {
     "name": "Morris & Garritano",
     "alternateName": "Catalyst Mergers",
     "url": "https://modern-insurance-demo.vercel.app",
-    "logo": "https://modern-insurance-demo.vercel.app/logo.png",
+    "logo": "https://modern-insurance-demo.vercel.app/logo.svg",
     "foundingDate": "1885",
     "description": "Trusted advisory since 1885. Property & Casualty, Employee Benefits, and Personal Insurance tailored to your needs.",
     "address": {

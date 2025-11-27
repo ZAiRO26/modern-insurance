@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
@@ -15,6 +15,12 @@ const playfair = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0f2d52",
+};
 
 export const metadata: Metadata = {
   title: "Morris & Garritano | Insurance & Risk Management",
